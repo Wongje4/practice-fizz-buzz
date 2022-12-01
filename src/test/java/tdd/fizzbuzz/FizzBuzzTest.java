@@ -40,4 +40,16 @@ public class FizzBuzzTest {
         //then
         assertEquals("Buzz", actual);
     }
+
+    @Test
+    void should_say_whizz_when_count_off_given_multiple7_number() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        //when
+        String actual = fizzBuzz.countOff(7);
+
+        //then
+        assertEquals("Whizz", actual);
+    }
 }
