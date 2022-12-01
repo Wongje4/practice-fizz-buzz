@@ -64,4 +64,16 @@ public class FizzBuzzTest {
         //then
         assertEquals("FizzBuzz", actual);
     }
+
+    @Test
+    void should_say_FizzBuzzWhizz_when_count_off_given_multiple3And5And7_number() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        //when
+        String actual = fizzBuzz.countOff(105);
+
+        //then
+        assertEquals("FizzBuzzWhizz", actual);
+    }
 }
